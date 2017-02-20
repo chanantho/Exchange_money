@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Exchange Money</title>
+</head>
+<body>
+	<div id="exchange">
+	<div class="img"></div>
+	   <center><h1>Exchange Money</h1></center>
+	   <hr width="400 px"> <br>
+		<form method="POST" action="exchange.php">
+			<h2>Money :<input placeholder="   Input your money exchange" class="money" name="money" type="number" required> &nbsp; Bath </h2>
+
+			<select class="select" name="cata" required>
+				<option> value of money </option>
+				<option value="usd">ดอลล่าสหรัส(USD)</option>
+				<option value="kor">เกาหลี(WON)</option>
+				<option value="hkd">ดอลลาร์ฮ่องกง(HKD)</option>
+			</select>
+			<button class="button" type="submit">EXCHANG</button>
+		</form>
+		</div>
+
+</body>
+</html>
+
+<!-- ////////////////////////////css/////////////////////// -->
+<style type="text/css">
+body{
+	background: #F7BE81;
+}
+#exchange{
+	width: 400px;
+	/*background: #F8E0E6;*/
+	padding: 10px;
+	margin: 80 auto;
+}
+h1{
+	font-family: sans-serif;
+	font-size: 30px;
+	color: #424242;
+}
+h2{
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #151515;
+	margin-left: 20px;
+}
+.money{
+	width: 200px;
+	height: 30px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+.button {
+    background-color: #00BFFF; /* Green */
+    border: none;
+    color: white;
+    padding: 5.5px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: red;
+}
+.select{
+	width: 250px;
+	height: 30px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+</style>
